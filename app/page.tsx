@@ -3,62 +3,127 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+      <main className="w-full max-w-4xl p-8 bg-white dark:bg-black">
+        {/* intro section */}
+        <section className="mb-12 text-center border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
+          <h1 className="text-3xl font-bold text-black dark:text-zinc-50">
+            Welcome to Streffel's Space Blog
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-2 text-lg text-zinc-600 dark:text-zinc-400">
+            Here, you'll find stunning images of space — captured through a telescope — showcasing
+            the wonders that float above us.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          <p className="mt-1 text-lg text-zinc-600 dark:text-zinc-400">
+            Take a moment to explore and enjoy the beauty of the cosmos.
+          </p>
+        </section>
+
+        {/* partial solar eclipse */}
+        <section className="mb-12 border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+            Partial Solar Eclipse
+          </h2>
+          <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+            On March 29, 2025, a partial solar eclipse graced the skies, visible across parts of the
+            Northern Hemisphere. During this event, the Moon passed between the Earth and the Sun, but
+            the alignment wasn’t perfect, leaving only part of the Sun obscured.
+          </p>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            The eclipse was most prominent in Europe, with the deepest coverage in the northwest. From
+            my location, about 25% of the Sun was obscured, peaking around noon.
+          </p>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            This eclipse was part of Saros cycle 149, a series of eclipses with similar
+            characteristics. It occurred just 0.8 days before the Moon reached perigee — its closest point
+            to Earth — making the Moon appear slightly larger in the sky.
+          </p>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            I'm thrilled to have witnessed this phenomenon under clear skies, using a solar filter on my
+            telescope to capture these moments. Notice the sunspot on the bottom-right side of the Sun in
+            the images below.
+          </p>
+          <div className="mt-4 grid grid-cols-2 gap-4">
+            <img src="/placeholder.jpg" alt="solar eclipse 1" className="w-full" />
+            <img src="/placeholder.jpg" alt="solar eclipse 2" className="w-full" />
+            <img src="/placeholder.jpg" alt="solar eclipse 3" className="w-full" />
+            <img src="/placeholder.jpg" alt="solar eclipse 4" className="w-full" />
+          </div>
+        </section>
+
+        {/* full moon and moon phases side-by-side */}
+        <section className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
+            <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+              Full Moon
+            </h2>
+            <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+              The full moon is breathtaking through a telescope. Although it's very bright it is
+              incredibly detailed. The contrast between the bright highlands and darker areas of the
+              Moon is striking.
+            </p>
+            <p className="text-zinc-600 dark:text-zinc-400">
+              The highlands are made of anorthosite, a material that reflects more light. The darker
+              regions, called lunar maria (Latin for "seas"), are smooth plains formed by ancient
+              volcanic activity.
+            </p>
+            <img src="/placeholder.jpg" alt="full moon" className="mt-4 w-full" />
+          </div>
+          <div className="border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
+            <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+              When and Why You See the Moon
+            </h2>
+            <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+              Here are some images of the Moon in different phases. These phases occur as the Earth
+              casts its shadow on the Moon (but you probably already knew that!).
+            </p>
+            <p className="text-zinc-600 dark:text-zinc-400">
+              Because the Moon reflects sunlight and isn’t always directly opposite the Sun, its
+              position shifts daily. That’s why you sometimes see the Moon during the day—especially
+              during crescent and quarter phases.
+            </p>
+            <p className="text-zinc-600 dark:text-zinc-400">
+              Because the Moon reflects sunlight and orbits the Earth, it’s not always directly
+              opposite the Sun. As a result, the part of the Moon we see illuminated—and the time it
+              appears in the sky—changes a little each day. This is why you can often spot the Moon
+              during the daytime, especially during the crescent and quarter phases.
+            </p>
+            <div className="mt-4 grid grid-cols-2 gap-4">
+              <img src="/placeholder.jpg" alt="three quarter moon" className="w-full" />
+              <img src="/placeholder.jpg" alt="half moon" className="w-full" />
+            </div>
+          </div>
+        </section>
+
+        {/* astrophotography section */}
+        <section className="mb-12 border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+            Astrophotography
+          </h2>
+          <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+            These are my first attempts at astrophotography. Note the Galilean moons of Jupiter,
+            they're small but visible.
+          </p>
+          <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <img src="/placeholder.jpg" alt="moon photography" className="w-full" />
+            <img src="/placeholder.jpg" alt="plane" className="w-full" />
+            <img src="/placeholder.jpg" alt="jupiter" className="w-full" />
+          </div>
+        </section>
+
+        {/* supermoon section */}
+        <section className="mb-12 border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+            5-11-25 Supermoon
+          </h2>
+          <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+            On 5-11-25, I captured the supermoon in all its glory. I'm still learning the
+            intricacies of astrophotography, but I'm pleased with the results so far.
+          </p>
+          <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src="/placeholder.jpg" alt="supermoon north" className="w-full" />
+            <img src="/placeholder.jpg" alt="supermoon south" className="w-full" />
+          </div>
+        </section>
       </main>
     </div>
   );
