@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="w-full max-w-4xl p-8 bg-white dark:bg-black">
+      <main className="w-full max-w-6xl px-4 py-8 bg-white dark:bg-black">
         {/* intro section */}
         <section className="mb-12 text-center border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
           <h1 className="text-3xl font-bold text-black dark:text-zinc-50">
@@ -20,7 +20,7 @@ export default function Home() {
 
         {/* partial solar eclipse */}
         <section className="mb-12 border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50 text-center">
             Partial Solar Eclipse
           </h2>
           <p className="mt-2 text-zinc-600 dark:text-zinc-400">
@@ -53,7 +53,7 @@ export default function Home() {
         {/* full moon and moon phases side-by-side */}
         <section className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
-            <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+            <h2 className="text-2xl font-semibold text-black dark:text-zinc-50 text-center">
               Full Moon
             </h2>
             <p className="mt-2 text-zinc-600 dark:text-zinc-400">
@@ -69,7 +69,7 @@ export default function Home() {
             <img src="/placeholder.jpg" alt="full moon" className="mt-4 w-full" />
           </div>
           <div className="border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
-            <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+            <h2 className="text-2xl font-semibold text-black dark:text-zinc-50 text-center">
               When and Why You See the Moon
             </h2>
             <p className="mt-2 text-zinc-600 dark:text-zinc-400">
@@ -96,7 +96,7 @@ export default function Home() {
 
         {/* astrophotography section */}
         <section className="mb-12 border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50 text-center">
             Astrophotography
           </h2>
           <p className="mt-2 text-zinc-600 dark:text-zinc-400">
@@ -112,7 +112,7 @@ export default function Home() {
 
         {/* supermoon section */}
         <section className="mb-12 border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50 text-center">
             5-11-25 Supermoon
           </h2>
           <p className="mt-2 text-zinc-600 dark:text-zinc-400">
