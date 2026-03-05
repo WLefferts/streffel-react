@@ -5,15 +5,15 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="w-full max-w-6xl px-4 py-8 bg-white dark:bg-black">
         {/* intro section */}
-        <section className="mb-12 text-center border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
+        <section className="mb-12 border border-gray-300 dark:border-zinc-600 rounded-lg p-6">
           <h1 className="text-3xl font-bold text-black dark:text-zinc-50">
             Welcome to Streffel's Space Blog
           </h1>
-          <p className="mt-2 text-lg text-zinc-600 dark:text-zinc-400">
+          <p className="mt-2 text-zinc-600 dark:text-zinc-400">
             Here, you'll find stunning images of space — captured through a telescope — showcasing
             the wonders that float above us.
           </p>
-          <p className="mt-1 text-lg text-zinc-600 dark:text-zinc-400">
+          <p className="mt-2 text-zinc-600 dark:text-zinc-400">
             Take a moment to explore and enjoy the beauty of the cosmos.
           </p>
         </section>
@@ -28,16 +28,16 @@ export default function Home() {
             Northern Hemisphere. During this event, the Moon passed between the Earth and the Sun, but
             the alignment wasn’t perfect, leaving only part of the Sun obscured.
           </p>
-          <p className="text-zinc-600 dark:text-zinc-400">
+          <p className="mt-2 text-zinc-600 dark:text-zinc-400">
             The eclipse was most prominent in Europe, with the deepest coverage in the northwest. From
             my location, about 25% of the Sun was obscured, peaking around noon.
           </p>
-          <p className="text-zinc-600 dark:text-zinc-400">
+          <p className="mt-2 text-zinc-600 dark:text-zinc-400">
             This eclipse was part of Saros cycle 149, a series of eclipses with similar
             characteristics. It occurred just 0.8 days before the Moon reached perigee — its closest point
             to Earth — making the Moon appear slightly larger in the sky.
           </p>
-          <p className="text-zinc-600 dark:text-zinc-400">
+          <p className="mt-2 text-zinc-600 dark:text-zinc-400">
             I'm thrilled to have witnessed this phenomenon under clear skies, using a solar filter on my
             telescope to capture these moments. Notice the sunspot on the bottom-right side of the Sun in
             the images below.
@@ -61,7 +61,7 @@ export default function Home() {
               incredibly detailed. The contrast between the bright highlands and darker areas of the
               Moon is striking.
             </p>
-            <p className="text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 text-zinc-600 dark:text-zinc-400">
               The highlands are made of anorthosite, a material that reflects more light. The darker
               regions, called lunar maria (Latin for "seas"), are smooth plains formed by ancient
               volcanic activity.
@@ -76,12 +76,12 @@ export default function Home() {
               Here are some images of the Moon in different phases. These phases occur as the Earth
               casts its shadow on the Moon (but you probably already knew that!).
             </p>
-            <p className="text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 text-zinc-600 dark:text-zinc-400">
               Because the Moon reflects sunlight and isn’t always directly opposite the Sun, its
               position shifts daily. That’s why you sometimes see the Moon during the day—especially
               during crescent and quarter phases.
             </p>
-            <p className="text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 text-zinc-600 dark:text-zinc-400">
               Because the Moon reflects sunlight and orbits the Earth, it’s not always directly
               opposite the Sun. As a result, the part of the Moon we see illuminated—and the time it
               appears in the sky—changes a little each day. This is why you can often spot the Moon
