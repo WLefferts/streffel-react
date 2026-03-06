@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Streffel's Space Blog",
-  description: "A blog showcasing stunning images of space captured through a telescope, sharing the wonders of the cosmos.",
+  description:
+    "A blog showcasing stunning images of space captured through a telescope, sharing the wonders of the cosmos.",
 };
 
 export default function RootLayout({
